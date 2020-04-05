@@ -1,0 +1,85 @@
+body {
+    background-image: url("../images/BurgerBackground.jfif" ) ;
+    background-size: cover;
+    
+}
+
+.titleText {
+    text-align: center;
+    color: rgb(245, 244, 247);
+    font-size: 100px;
+   
+}
+
+.secondHeading {
+    color: rgb(252, 251, 250);
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+.addBurger {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.centerSubmit {
+    text-align: center;
+    margin: 0 auto 3% 0;
+
+}
+
+
+.showBurger {
+    text-align: center;
+    font-size: 28px;
+}
+
+.devourBurger
+{
+    text-align: center;
+    font-size: 28px;
+
+}
+
+.btn {
+    padding-top: 0px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    border-color: white;
+    
+}
+
+.p a {
+animation: pulse 2s infinite;
+cursor: pointer;
+}
+
+.icon {
+height: 300px;
+width: 300px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgb(255, 255, 255);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
