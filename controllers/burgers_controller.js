@@ -26,16 +26,14 @@ router.post("/updateOne/:id", function (req, res) {
     var getCondition = "id = " + req.params.id;
     burger.updateOne({
         devoured: req.body.devoured
-    }, getCondition, function () {            
+    }, getCondition, function () {
         res.redirect("/");
     });
 });
 
-//POST REQUEST - Delete
+//Delete/post Request
 router.post("/deleteOne/:id", function (req, res) {
-    // holds burger being deleted     
     var getCondition = "id = " + req.params.id;
-    // Redirect to the homepage                 
     burger.deleteOne(getCondition, function () {
         res.redirect("/");
     });
