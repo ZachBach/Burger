@@ -28,6 +28,13 @@ app.set("view engine", "handlebars");
 //calls api routes
 app.use(routes);
 
+app.use(timeout(15000));
+app.use(haltOnTimedout);
+
+function haltOnTimedout(req, res, next) {
+    if (!req.timedout) next();
+}
+
 app.listen(PORT, function(){
 console.log("Listening on Port: " + PORT);
 });
